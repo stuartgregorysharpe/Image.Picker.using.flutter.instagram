@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'views/auth/login_view.dart';
 import 'views/auth/register_view.dart';
+import 'views/auth/create_username.dart';
+import 'views/auth/create_password.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +31,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => LoginPage(),
         '/register': (context) => RegisterPage(),
+        '/login': (context) => LoginPage(),
+        '/create-username': (context) => CreateUserName(),
+        '/create-password': (context) => CreatePassword(),
       },
     );
   }
