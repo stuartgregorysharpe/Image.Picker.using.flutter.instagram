@@ -23,23 +23,47 @@ class LoginPage extends StatelessWidget {
               child: Column(children: [
                 TextFormField(
                   decoration:
-                      const InputDecoration(labelText: 'Email or Username'),
+                      const InputDecoration(label: Center(
+                        child: Text('Email or Username', style: TextStyle(fontFamily: "Radley", fontSize: 18, color: Colors.black),),
+                      )),
                 ),
                 TextFormField(
-                  decoration: const InputDecoration(labelText: 'Password'),
+                  decoration: const InputDecoration(label: Center(
+                    child: Text('Password', style: TextStyle(fontFamily: "Radley", fontSize: 18, color: Colors.black)),
+                  )),
                   obscureText: true,
                 ),
-                ElevatedButton(
-                    onPressed: () {/* Add login logic here */},
-                    child: Text('Login'),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.black))),
-                TextButton(
-                  onPressed: () => Navigator.pushNamed(context, '/register'),
-                  child: const Text('Register', style: TextStyle(color: Colors.black)),
-                ),
               ]),
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 30, left: 40, right: 40),
+              child: Column(
+                children: [
+                  ElevatedButton(
+                      onPressed: () {/* Add login logic here */},
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.black,
+                          minimumSize: const Size.fromHeight(40)
+                      ),
+                      child: Text('Sign in', style: TextStyle(fontFamily: "Radley", fontSize: 18))
+                  ),
+                  Text('Forget Password?', style: TextStyle(fontFamily: "Radley", fontSize: 16))
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 30, left: 40, right: 40),
+              child: Column(
+                children: [
+                  ElevatedButton(
+                      onPressed: () => Navigator.pushNamed(context, '/register'),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.black,
+                          minimumSize: const Size.fromHeight(40)
+                      ),
+                      child: const Text('Sign up', style: TextStyle(fontFamily: "Radley", fontSize: 18))),
+                ],
+              ),
             )
           ],
         ),
