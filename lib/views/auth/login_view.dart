@@ -47,7 +47,10 @@ class LoginPage extends StatelessWidget {
                       ),
                       child: Text('Sign in', style: TextStyle(fontFamily: "Radley", fontSize: 18))
                   ),
-                  Text('Forget Password?', style: TextStyle(fontFamily: "Radley", fontSize: 16))
+                  TextButton(
+                    onPressed: () => Navigator.pushNamed(context, '/forget-password'),
+                    child: const Text('Forget Password?', style: TextStyle(fontFamily: "Radley", fontSize: 16, color: Colors.black)),
+                  )
                 ],
               ),
             ),

@@ -3,6 +3,8 @@ import 'views/auth/login_view.dart';
 import 'views/auth/register_view.dart';
 import 'views/auth/create_username.dart';
 import 'views/auth/create_password.dart';
+import 'views/auth/forget_password.dart';
+import 'views/auth/enter_code.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +36,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/create-username': (context) => CreateUserName(),
         '/create-password': (context) => CreatePassword(),
+        '/forget-password': (context) => ForgetPassword(),
+        '/enter-code': (context) => EnterCode(),
       },
     );
   }
