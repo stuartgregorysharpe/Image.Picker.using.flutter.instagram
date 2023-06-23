@@ -51,7 +51,7 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 children: [
                   ElevatedButton(
-                      onPressed: () {/* Add login logic here */},
+                      onPressed: () => Navigator.pushNamed(context, '/first-page'),
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.black,
                           minimumSize: const Size.fromHeight(40)),

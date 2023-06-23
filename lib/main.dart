@@ -5,6 +5,7 @@ import 'views/auth/create_username.dart';
 import 'views/auth/create_password.dart';
 import 'views/auth/forget_password.dart';
 import 'views/auth/enter_code.dart';
+import 'views/pages/first_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         '/create-password': (context) => CreatePassword(),
         '/forget-password': (context) => ForgetPassword(),
         '/enter-code': (context) => EnterCode(),
+        '/first-page': (context) => FirstPage(),
       },
     );
   }
