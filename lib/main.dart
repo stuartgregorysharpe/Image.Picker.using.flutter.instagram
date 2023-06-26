@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
-import 'views/auth/login_view.dart';
-import 'views/auth/register_view.dart';
-import 'views/auth/create_username.dart';
-import 'views/auth/create_password.dart';
-import 'views/auth/forget_password.dart';
-import 'views/auth/enter_code.dart';
-import 'views/pages/first_page.dart';
+import 'package:lgcy_flutter/views/auth/login_view.dart';
+import 'package:lgcy_flutter/views/auth/register_view.dart';
+import 'package:lgcy_flutter/views/auth/create_username.dart';
+import 'package:lgcy_flutter/views/auth/create_password.dart';
+import 'package:lgcy_flutter/views/auth/forget_password.dart';
+import 'package:lgcy_flutter/views/auth/enter_code.dart';
+import 'package:lgcy_flutter/views/pages/first_page.dart';
+import 'package:lgcy_flutter/views/pages/like_page.dart';
+// import 'package:lgcy_flutter/views/pages/profile/profile_page.dart';
+// import 'package:lgcy_flutter/views/pages/profile/private_user_profile.dart';
+// import 'package:lgcy_flutter/views/pages/profile/account_setting.dart';
+// import 'package:lgcy_flutter/views/pages/profile/profile_setting.dart';
+import 'package:lgcy_flutter/views/pages/setting.dart';
+import 'package:lgcy_flutter/views/pages/timeline/timeline.dart';
+import 'package:lgcy_flutter/views/pages/timeline/private_timeline.dart';
+import 'package:lgcy_flutter/views/pages/timeline/edit_timeline.dart';
+import 'package:lgcy_flutter/views/pages/timeline/edit_private_timeline.dart';
+import 'package:lgcy_flutter/views/pages/timeline/invite_members.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,14 +43,28 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => LoginPage(),
+        '/': (context) => RegisterPage(),
         '/register': (context) => RegisterPage(),
         '/login': (context) => LoginPage(),
         '/create-username': (context) => CreateUserName(),
         '/create-password': (context) => CreatePassword(),
         '/forget-password': (context) => ForgetPassword(),
         '/enter-code': (context) => EnterCode(),
+
         '/first-page': (context) => FirstPage(),
+        '/like-page': (context) => LikePage(),
+        '/setting': (context) => Setting(),
+
+        // '/profile-page': (context) => ProfilePage(),
+        // '/user-profile': (context) => PrivateUserProfile(),
+        // '/account-setting': (context) => AccountSetting(),
+        // '/profile-setting': (context) => ProfileSetting(),
+
+        '/create-timeline': (context) => TimeLine(),
+        '/private-timeline': (context) => PrivateTimeLine(),
+        '/edit-timeline': (context) => EditTimeLine(),
+        '/edit-private-timeline': (context) => EditPrivateTimeLine(),
+        '/invite-members': (context) => InviteMembers(),
       },
     );
   }

@@ -8,6 +8,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -23,8 +24,7 @@ class LoginPage extends StatelessWidget {
               child: Column(children: [
                 TextFormField(
                   decoration: const InputDecoration(
-                      label: Center(
-                    child: Text(
+                      label: Center(child: Text(
                       'Email or Username',
                       style: TextStyle(
                           fontFamily: "Radley",
@@ -36,7 +36,7 @@ class LoginPage extends StatelessWidget {
                 TextFormField(
                   decoration: const InputDecoration(
                       label: Center(
-                    child: Text('Password',
+                        child: Text('Password',
                         style: TextStyle(
                             fontFamily: "Radley",
                             fontSize: 18,

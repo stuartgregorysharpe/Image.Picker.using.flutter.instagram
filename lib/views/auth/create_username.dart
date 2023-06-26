@@ -6,8 +6,10 @@ class CreateUserName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
+        elevation: 0.00,
         leading: IconButton(
           onPressed: () => Navigator.pushNamed(context, '/register'),
           icon: Icon(Icons.arrow_back_ios, color: Colors.black),

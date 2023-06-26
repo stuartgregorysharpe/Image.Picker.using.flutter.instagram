@@ -4,9 +4,11 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
+    // double height = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        elevation: 0.00,
         backgroundColor: Colors.white,
         leading: IconButton(
           onPressed: () => Navigator.pushNamed(context, '/forget-password'),
@@ -41,7 +43,6 @@ class FirstPage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(top: 50),
         child: Column(children: [
           // Image.asset('assets/img/banner2.png', width: width, fit: BoxFit.fitWidth,)
           Container(
@@ -57,7 +58,7 @@ class FirstPage extends StatelessWidget {
                   ])),
           Container(
             padding: const EdgeInsets.only(left: 12, right: 12),
-            height: 160,
+            height: 140,
             child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
@@ -68,8 +69,8 @@ class FirstPage extends StatelessWidget {
                     width: 103,
                     height: 171,
                     color: const Color(0xFFE9E8E8),
-                    margin: EdgeInsets.only(left: 5, right: 5),
-                    padding: const EdgeInsets.only(top: 20),
+                    margin: const EdgeInsets.only(left: 5, right: 5),
+                    padding: const EdgeInsets.only(top: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -77,12 +78,8 @@ class FirstPage extends StatelessWidget {
                           alignment: Alignment.center,
                           child: Image.asset('assets/img/model.png'),
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Text("rachelmorrison",
-                            style: TextStyle(
-                                fontFamily: "Montserrat", fontSize: 12)),
+                        const SizedBox(height: 10),
+                        const Text("rachelmorrison", style: TextStyle(fontFamily: "Montserrat", fontSize: 12)),
                       ],
                     ),
                     // Image.asset('assets/img/model.png');
@@ -94,11 +91,6 @@ class FirstPage extends StatelessWidget {
             width: width,
             fit: BoxFit.fitWidth,
           ),
-          Image.asset(
-            'assets/img/banner.png',
-            width: width,
-            fit: BoxFit.fitWidth,
-          )
         ]),
       ),
     );
