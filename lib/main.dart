@@ -18,6 +18,11 @@ import 'package:lgcy_flutter/views/pages/timeline/edit_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/edit_private_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/invite_members.dart';
 
+import 'package:lgcy_flutter/views/pages/change_profile/change_password.dart';
+import 'package:lgcy_flutter/views/pages/change_profile/change_phonenumber.dart';
+import 'package:lgcy_flutter/views/pages/change_profile/change_username.dart';
+import 'package:lgcy_flutter/views/pages/chat_pages/chat_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -43,7 +48,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => RegisterPage(),
+        '/': (context) => ChatPage(),
         '/register': (context) => RegisterPage(),
         '/login': (context) => LoginPage(),
         '/create-username': (context) => CreateUserName(),
@@ -65,6 +70,12 @@ class MyApp extends StatelessWidget {
         '/edit-timeline': (context) => EditTimeLine(),
         '/edit-private-timeline': (context) => EditPrivateTimeLine(),
         '/invite-members': (context) => InviteMembers(),
+
+        '/change-password': (context) => ChangePassword(),
+        '/change-phonenumber': (context) => ChangePhoneNumber(),
+        '/change-username': (context) => ChangeUsername(),
+
+        '/chat-page': (context) => ChatPage(),
       },
     );
   }
