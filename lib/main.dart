@@ -18,10 +18,14 @@ import 'package:lgcy_flutter/views/pages/timeline/edit_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/edit_private_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/invite_members.dart';
 
-import 'package:lgcy_flutter/views/pages/change_profile/change_password.dart';
-import 'package:lgcy_flutter/views/pages/change_profile/change_phonenumber.dart';
-import 'package:lgcy_flutter/views/pages/change_profile/change_username.dart';
+import 'package:lgcy_flutter/views/pages/user_page/change_password.dart';
+import 'package:lgcy_flutter/views/pages/user_page/change_phonenumber.dart';
+import 'package:lgcy_flutter/views/pages/user_page/change_username.dart';
+
 import 'package:lgcy_flutter/views/pages/chat_pages/chat_page.dart';
+import 'package:lgcy_flutter/views/pages/user_page/search_img.dart';
+
+import 'package:lgcy_flutter/views/pages/user_page/search_user.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +52,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => ChatPage(),
+        '/': (context) => SearchImage(),
         '/register': (context) => RegisterPage(),
         '/login': (context) => LoginPage(),
         '/create-username': (context) => CreateUserName(),
@@ -76,6 +80,9 @@ class MyApp extends StatelessWidget {
         '/change-username': (context) => ChangeUsername(),
 
         '/chat-page': (context) => ChatPage(),
+
+        '/search-user': (context) => SearchUser(),
+        '/search-image': (context) => SearchImage(),
       },
     );
   }
