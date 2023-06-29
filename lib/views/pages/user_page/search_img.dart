@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SearchImage extends StatelessWidget {
-  final List<Map> myProducts =
-  List.generate(15, (index) => {"id": index, "name": "assets/img/search/res"});
+  final List<Map> myProducts = List.generate(
+      15, (index) => {"id": index, "name": "assets/img/search/res"});
 
   @override
   Widget build(BuildContext context) {
@@ -52,15 +52,15 @@ class SearchImage extends StatelessWidget {
               decoration: InputDecoration(
                 // hintText: 'Amanda...',
                 border: UnderlineInputBorder(
-                  borderSide: BorderSide(
-                      width: 1.0, color: Colors.black
-                  ),
+                  borderSide: BorderSide(width: 1.0, color: Colors.black),
                 ),
                 enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(width: 1.0, color: Colors.black), // BorderSide
+                  borderSide:
+                      BorderSide(width: 1.0, color: Colors.black), // BorderSide
                 ), // OutlineInputBorder
                 focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(width: 1.0, color: Colors.black), // BorderSide
+                  borderSide:
+                      BorderSide(width: 1.0, color: Colors.black), // BorderSide
                 ), // BorderSide,
               ),
             ),
@@ -77,41 +77,33 @@ class SearchImage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              // padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
-              child: Column(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.only(top: 20),
-                    height: 650,
-                    child: GridView.builder(
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
-                        ),
-                        itemCount: myProducts.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return Container(
-                            // decoration: BoxDecoration(
-                            //     borderRadius: BorderRadius.circular(15)
-                            // ),
-                            padding: const EdgeInsets.only(left: 0, right: 0),
-                            child: Column(
-                              children: [
-                                Image.asset(myProducts[index]["name"]+"$index.png"),
-                                // Row(
-                                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                //   children: [
-                                //     const Text("Our Adventure", style: TextStyle(fontFamily: "Montserrat", fontSize: 11)),
-                                //     Image.asset('assets/img/more.png')
-                                //   ],
-                                // )
-                              ],
-                            ),
-                          );
-                        }),
-                  ),
-                ],
-              ),
+            Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.only(top: 20),
+                  height: 650,
+                  child: GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                      ),
+                      itemCount: myProducts.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return Container(
+                          // decoration: BoxDecoration(
+                          //     borderRadius: BorderRadius.circular(15)
+                          // ),
+                          padding: const EdgeInsets.only(left: 0, right: 0),
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                  myProducts[index]["name"] + "$index.png"),
+                            ],
+                          ),
+                        );
+                      }),
+                ),
+              ],
             ),
           ],
         ),

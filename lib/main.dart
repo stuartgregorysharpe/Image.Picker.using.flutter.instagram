@@ -12,6 +12,9 @@ import 'package:lgcy_flutter/views/pages/like_page.dart';
 // import 'package:lgcy_flutter/views/pages/profile/account_setting.dart';
 // import 'package:lgcy_flutter/views/pages/profile/profile_setting.dart';
 import 'package:lgcy_flutter/views/pages/setting.dart';
+import 'package:lgcy_flutter/views/pages/timeline/public_timeline.dart';
+import 'package:lgcy_flutter/views/pages/timeline/public_timeline_public.dart';
+import 'package:lgcy_flutter/views/pages/timeline/secret_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/private_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/edit_timeline.dart';
@@ -52,7 +55,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => SearchImage(),
+        '/': (context) => SecretTimeline(),
         '/register': (context) => RegisterPage(),
         '/login': (context) => LoginPage(),
         '/create-username': (context) => CreateUserName(),
@@ -83,6 +86,10 @@ class MyApp extends StatelessWidget {
 
         '/search-user': (context) => SearchUser(),
         '/search-image': (context) => SearchImage(),
+
+        '/public-timeline': (context) => PublicTimeline(),
+        '/public-timeline-public-view': (context) => PublicTimelinePublic(),
+        '/secret-timeline': (context) => SecretTimeline(),
       },
     );
   }
