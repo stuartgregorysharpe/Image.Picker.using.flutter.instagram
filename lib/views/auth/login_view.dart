@@ -24,7 +24,8 @@ class LoginPage extends StatelessWidget {
               child: Column(children: [
                 TextFormField(
                   decoration: const InputDecoration(
-                      label: Center(child: Text(
+                      label: Center(
+                    child: Text(
                       'Email or Username',
                       style: TextStyle(
                           fontFamily: "Radley",
@@ -36,7 +37,7 @@ class LoginPage extends StatelessWidget {
                 TextFormField(
                   decoration: const InputDecoration(
                       label: Center(
-                        child: Text('Password',
+                    child: Text('Password',
                         style: TextStyle(
                             fontFamily: "Radley",
                             fontSize: 18,
@@ -51,7 +52,8 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 children: [
                   ElevatedButton(
-                      onPressed: () => Navigator.pushNamed(context, '/first-page'),
+                      onPressed: () =>
+                          Navigator.pushNamed(context, '/homepage'),
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.black,
                           minimumSize: const Size.fromHeight(40)),

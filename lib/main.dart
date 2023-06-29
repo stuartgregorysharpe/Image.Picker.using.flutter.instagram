@@ -5,8 +5,9 @@ import 'package:lgcy_flutter/views/auth/create_username.dart';
 import 'package:lgcy_flutter/views/auth/create_password.dart';
 import 'package:lgcy_flutter/views/auth/forget_password.dart';
 import 'package:lgcy_flutter/views/auth/enter_code.dart';
-import 'package:lgcy_flutter/views/pages/first_page.dart';
+import 'package:lgcy_flutter/views/pages/homepage.dart';
 import 'package:lgcy_flutter/views/pages/like_page.dart';
+import 'package:lgcy_flutter/views/pages/notification_alram.dart';
 // import 'package:lgcy_flutter/views/pages/profile/profile_page.dart';
 // import 'package:lgcy_flutter/views/pages/profile/private_user_profile.dart';
 // import 'package:lgcy_flutter/views/pages/profile/account_setting.dart';
@@ -15,6 +16,8 @@ import 'package:lgcy_flutter/views/pages/setting.dart';
 import 'package:lgcy_flutter/views/pages/timeline/public_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/public_timeline_public.dart';
 import 'package:lgcy_flutter/views/pages/timeline/secret_timeline.dart';
+import 'package:lgcy_flutter/views/pages/timeline/suggested_timeline.dart';
+import 'package:lgcy_flutter/views/pages/timeline/time_capsule.dart';
 import 'package:lgcy_flutter/views/pages/timeline/timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/private_timeline.dart';
 import 'package:lgcy_flutter/views/pages/timeline/edit_timeline.dart';
@@ -55,7 +58,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => SecretTimeline(),
+        '/': (context) => SuggestTimeline(),
         '/register': (context) => RegisterPage(),
         '/login': (context) => LoginPage(),
         '/create-username': (context) => CreateUserName(),
@@ -63,7 +66,7 @@ class MyApp extends StatelessWidget {
         '/forget-password': (context) => ForgetPassword(),
         '/enter-code': (context) => EnterCode(),
 
-        '/first-page': (context) => FirstPage(),
+        '/homepage': (context) => HomePage(),
         '/like-page': (context) => LikePage(),
         '/setting': (context) => Setting(),
 
@@ -90,6 +93,9 @@ class MyApp extends StatelessWidget {
         '/public-timeline': (context) => PublicTimeline(),
         '/public-timeline-public-view': (context) => PublicTimelinePublic(),
         '/secret-timeline': (context) => SecretTimeline(),
+        '/time-capsule': (context) => TimeCapsule(),
+        '/suggest-timeline': (context) => SuggestTimeline(),
+        '/notification': (context) => NotificationAlram(),
       },
     );
   }

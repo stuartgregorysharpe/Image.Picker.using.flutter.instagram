@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatelessWidget {
+class SuggestTimeline extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -14,6 +14,12 @@ class FirstPage extends StatelessWidget {
           onPressed: () => Navigator.pushNamed(context, '/forget-password'),
           icon: const Icon(Icons.search, color: Colors.black),
         ),
+        actions: const [
+          Padding(
+            padding: EdgeInsets.only(right: 30),
+            child: Icon(Icons.add_box_outlined, color: Colors.black),
+          )
+        ],
         title: Image.asset('assets/logo/small_logo.png'),
         centerTitle: true,
       ),
@@ -79,7 +85,9 @@ class FirstPage extends StatelessWidget {
                           child: Image.asset('assets/img/model.png'),
                         ),
                         const SizedBox(height: 10),
-                        const Text("rachelmorrison", style: TextStyle(fontFamily: "Montserrat", fontSize: 12)),
+                        const Text("rachelmorrison",
+                            style: TextStyle(
+                                fontFamily: "Montserrat", fontSize: 12)),
                       ],
                     ),
                     // Image.asset('assets/img/model.png');
@@ -91,6 +99,40 @@ class FirstPage extends StatelessWidget {
             width: width,
             fit: BoxFit.fitWidth,
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(children: [
+            SizedBox(
+              width: 50,
+              height: 50,
+              child: Image.asset('assets/img/avatar.png'),
+            ),
+            const SizedBox(
+              width: 20,
+            ),
+            const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "rachelmorrison",
+                  style: TextStyle(
+                      fontFamily: "Montserrat",
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text("My adventure in santa cruz",
+                    style: TextStyle(
+                      fontFamily: "Montserrat",
+                      fontSize: 13,
+                    ))
+              ],
+            ),
+            const SizedBox(
+              width: 90,
+            ),
+            const Icon(Icons.favorite_border)
+          ])
         ]),
       ),
     );

@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CreateUserName extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,41 +14,47 @@ class CreateUserName extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        child: Column(
-            children: [
-              Container(
-                  padding: const EdgeInsets.only(top: 150.0),
-                  child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text("Create Your account", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Montserrat'))
-                      ])
-              ),
-              Container(
-                padding: const EdgeInsets.only(left: 40, top: 30, right: 40),
-                child: Column(
+        child: Column(children: [
+          Container(
+              padding: const EdgeInsets.only(top: 150.0),
+              child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    TextFormField(
-                      decoration: const InputDecoration(label: Center(
-                        child: Text("Username"),
-                      )),
-                    ),
-                  ],
+                    Text("Create Your account",
+                        style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Montserrat'))
+                  ])),
+          Container(
+            padding: const EdgeInsets.only(left: 40, top: 30, right: 40),
+            child: Column(
+              children: [
+                TextFormField(
+                  decoration: const InputDecoration(
+                      label: Center(
+                    child: Text("Username"),
+                  )),
                 ),
-              ),
-              Container(
-                padding: const EdgeInsets.only(top: 300, left: 300),
-                child: Row(
-                  children: [
-                    TextButton(
-                      onPressed: () => Navigator.pushNamed(context, '/create-password'),
-                      child: const Text('Next', style: TextStyle(color: Colors.black),),
-                    ),
-                  ],
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.only(top: 300, left: 300),
+            child: Row(
+              children: [
+                TextButton(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, '/create-password'),
+                  child: const Text(
+                    'Next',
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
-              )
-            ]
-        ),
+              ],
+            ),
+          )
+        ]),
       ),
     );
   }
