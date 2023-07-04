@@ -13,6 +13,7 @@ class LoginPage extends StatelessWidget {
         child: Column(
           children: [
             Container(
+
                 padding: const EdgeInsets.only(top: 150),
                 child: Column(children: [
                   Image.asset(
