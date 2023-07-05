@@ -51,7 +51,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => ImagePickerPage(),
+        '/': (context) => LifeAdventurePage(),
+        '/imagepicker': (context) => ImagePickerPage(),
         '/xxx': (context) => SuggestTimeline(),
         '/register': (context) => RegisterPage(),
         '/login': (context) => LoginPage(),
