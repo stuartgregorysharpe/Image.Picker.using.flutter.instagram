@@ -33,6 +33,7 @@ import 'package:lgcy_flutter/views/pages/user_page/search_img.dart';
 
 import 'package:lgcy_flutter/views/pages/user_page/search_user.dart';
 import 'package:lgcy_flutter/views/pages/ypimagepicker/ypimagepicker.dart';
+import 'package:lgcy_flutter/views/pages/ypimagepicker/contentedit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -51,8 +52,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => LifeAdventurePage(),
-        '/imagepicker': (context) => ImagePickerPage(),
+        // '/': (context) => ContentEditPage(),
+        '/': (context) => ImagePickerPage(),
         '/xxx': (context) => SuggestTimeline(),
         '/register': (context) => RegisterPage(),
         '/login': (context) => LoginPage(),

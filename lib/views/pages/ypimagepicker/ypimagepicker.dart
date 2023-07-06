@@ -47,7 +47,7 @@ class _MyAppState extends State<ImagePickerPage> {
               child: Row(
                 children: <Widget>[
                   Text(
-                    'Select',
+                    'Gallery',
                     style: TextStyle(color: Colors.black),
                   ),
                   Icon(
