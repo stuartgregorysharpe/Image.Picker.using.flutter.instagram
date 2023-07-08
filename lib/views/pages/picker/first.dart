@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
+import './second.dart';
+
 
 class ImagePickerPage extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _ImagePickerPageState createState() => _ImagePickerPageState();
 }
 
-class _MyAppState extends State<ImagePickerPage> {
+class _ImagePickerPageState extends State<ImagePickerPage> {
   List<Asset> images = <Asset>[];
   Asset? displayImage;
 
@@ -72,7 +74,16 @@ class _MyAppState extends State<ImagePickerPage> {
         actions: [
           TextButton(
             onPressed: () {
-              // Put your next navigation functionality here
+              if (displayImage != null) {
+                displayImage!.getByteData().then((bd) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ImageEditPage(bd!.buffer.asUint8List()),
+                    ),
+                  );
+                });
+              }
             },
             child: Text(
               'Next',
