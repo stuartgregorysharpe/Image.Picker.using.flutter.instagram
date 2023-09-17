@@ -1,6 +1,11 @@
 # Image Picker similar with Instagram
 Welcome to the Flutter version of our mobile frontend. This project aims to replicate the smooth and user-friendly image picking functionality found in apps like Instagram.
 
+## Youtube Video Associated with My Working
+
+[![Watch the video on YouTube](https://img.youtube.com/NAj04QH_n1Q/maxresdefault.jpg)](https://youtu.be/NAj04QH_n1Q)
+
+
 #App Preview
 ![Screenshot_24](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/e896fe62-dfd8-4e0a-9277-ac645516b126)
 ![Screenshot_23](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/2aed93b0-e15a-4038-aa02-d13233a938fb)
