@@ -3,7 +3,7 @@ Welcome to the Flutter version of our mobile frontend. This project aims to repl
 
 ## Youtube Video Associated with My Working
 
-[![Watch the video on YouTube](https://img.youtube.com/NAj04QH_n1Q/maxresdefault.jpg)](https://youtu.be/NAj04QH_n1Q)
+[![Watch the video on YouTube](https://img.youtube.com/vi/NAj04QH_n1Q/maxresdefault.jpg)](https://youtu.be/NAj04QH_n1Q)
 
 
 #App Preview
