@@ -17,21 +17,21 @@ Image Posting: Share your selected images with captions and locations.
 
 #Getting Started
 Prerequisites
-Flutter SDK (Version 3.7.9)
-Dart (Version 2.0)
-Android Studio or VS Code
-An emulator or physical device for testing
-Installation
-Clone the Repository:
 
+Flutter SDK (Version 3.7.9)
+
+Dart (Version 2.0)
+
+Android Studio or VS Code
+
+An emulator or physical device for testing
 
 
 #Get Flutter Packages:
 flutter pub get
-Run the App:
 
-flutter run
-Usage
+
+#flutter run
 Open the app and navigate to the Image Picker page.
 Choose to either select an image from the gallery or capture a new photo.
 Edit and apply filters to the image.
