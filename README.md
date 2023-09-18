@@ -7,7 +7,7 @@ Welcome to the Flutter version of our mobile frontend. This project aims to repl
 
 
 #App Preview
-![Screenshot_24](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/e896fe62-dfd8-4e0a-9277-ac645516b126)
+
 ![Screenshot_23](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/2aed93b0-e15a-4038-aa02-d13233a938fb)
 ![Screenshot_22](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/1b5a616a-a973-4689-9e45-d3bc8f7df58b)
 ![Screenshot_21](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/cc5a7796-4005-4b74-89ad-3c198aa3aa0f)
