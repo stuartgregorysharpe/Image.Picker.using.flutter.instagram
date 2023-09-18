@@ -6,7 +6,8 @@ Welcome to the Flutter version of our mobile frontend. This project aims to repl
 [![Watch the video on YouTube](https://img.youtube.com/vi/NAj04QH_n1Q/maxresdefault.jpg)](https://youtu.be/NAj04QH_n1Q)
 
 
-#App Preview
+# App Preview
+
 ![Screenshot_18](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/6277ee17-105c-4a7a-bdca-cfde9dbbbe2f)
 
 ![Screenshot_21](https://github.com/stuartgregorysharpe/Image.Picker.using.flutter.instagram/assets/137684294/cc5a7796-4005-4b74-89ad-3c198aa3aa0f)
